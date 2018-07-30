@@ -27,6 +27,40 @@
 	body {
 		color: #FFFFFF
 	}
+	.update {
+    
+    position: relative;
+    -webkit-animation-name: example;  /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1.5s;  /* Safari 4.0 - 8.0 */    
+    -webkit-animation-delay: 2s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-fill-mode: backwards; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 1.5s;    
+    animation-delay: 2s;
+    animation-fill-mode: backwards;
+	animation-iteration-count: infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+    0% { color: white;}
+    25% {color: red;}
+	50% {color:white;}
+	75% {color:red;}
+	100% {color:white;}
+
+}
+
+@keyframes example {
+
+    0% { color: white;}
+    25% {color:red;}
+	50% {color:white;}
+	75% {color:red;}
+	100% {color:white;}
+}
+	
+	
 </style>
 
 
@@ -62,6 +96,7 @@
 				</div>
 				</div>
 			</div>	 -->
+								<a style="color: #ffffff;" class="update" href="./updates.html"> updates !</a>
 
 				<a href="#menu" style="color: #ffffff;">Menu</a>
 			</nav>
