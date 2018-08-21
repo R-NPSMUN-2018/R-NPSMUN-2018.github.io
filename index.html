@@ -55,6 +55,141 @@
 	100% {color:white;}
 }
 	
+.list-type5{
+width:410px;
+margin:0 auto;
+}
+.list-type5 ol {
+list-style-type: none;
+list-style-type: decimal !ie; /*IE 7- hack*/
+margin: 0;
+margin-left: 1em;
+padding: 0;
+counter-reset: li-counter;
+}
+.list-type5 ol li{
+position: relative;
+margin-bottom: 1.5em;
+padding: 0.5em;
+background-color:#313f75;
+padding-left: 58px;
+}
+
+.list-type5 a{
+text-decoration:none;
+color:black;
+font-size:1em;
+font-weight: bold;
+font-family: 'Raleway', sans-serif;
+}
+
+.list-type5 li:hover{
+box-shadow:inset -1em 0  #495891;
+-webkit-transition: box-shadow 0.5s; /* For Safari 3.1 to 6.0 */
+transition: box-shadow 0.5s;
+}
+
+.list-type5 ol li:before {
+position: absolute;
+top: -0.3em;
+left: -0.5em;
+width: 1.8em;
+height: 1.2em;
+font-size: 2em;
+line-height: 1.2;
+font-weight: bold;
+text-align: center;
+color: #ffffff;
+background-color:  #4c5c96;
+transform: rotate(-20deg);
+-ms-transform: rotate(-20deg);
+-webkit-transform: rotate(-20deg);
+z-index: 99;
+overflow: hidden;
+content: counter(li-counter);
+counter-increment: li-counter;
+}
+
+/*inner SCHEDULE*/
+@charset "UTF-8";
+
+
+
+
+
+.container th h1 {
+	  font-weight: bold;
+	  font-size: 1em;
+  text-align: left;
+  color:#ffffff;
+}
+
+.container td {
+	  font-weight: normal;
+	  font-size: 1em;
+  -webkit-box-shadow: 0 2px 2px -2px #0E1119;
+	   -moz-box-shadow: 0 2px 2px -2px #0E1119;
+	        box-shadow: 0 2px 2px -2px #0E1119;
+}
+
+.container {
+	  text-align: left;
+	  overflow: hidden;
+	  width: 80%;
+	  margin: 0 auto;
+  display: table;
+  padding: 0 0 8em 0;
+}
+
+.container td, .container th {
+	  padding-bottom: 2%;
+	  padding-top: 2%;
+  padding-left:2%;  
+}
+
+/* Background-color of the odd rows */
+.container tr:nth-child(odd) {
+	  background-color: #323C50;
+}
+
+/* Background-color of the even rows */
+.container tr:nth-child(even) {
+	  background-color: #2C3446;
+}
+
+.container th {
+	  background-color: #1F2739;
+}
+
+.container td:first-child { color: rgb(241, 240, 236); }
+
+.container tr:hover {
+   background-color: #464A52;
+-webkit-box-shadow: 0 6px 6px -6px #0E1119;
+	   -moz-box-shadow: 0 6px 6px -6px #0E1119;
+	        box-shadow: 0 6px 6px -6px #0E1119;
+}
+
+.container td:hover {
+  background-color:#5b6eb9;
+  color: #ffffff;
+  font-weight: bold;
+  
+  box-shadow: #475691 -1px 1px, #5367b8 -2px 2px, #5367b8 -3px 3px, #5367b8 -4px 4px, #5367b8 -5px 5px, #5367b8 -6px 6px;
+  transform: translate3d(6px, -6px, 0);
+  
+  transition-delay: 0s;
+	  transition-duration: 0.4s;
+	  transition-property: all;
+  transition-timing-function: line;
+}
+
+@media (max-width: 800px) {
+.container td:nth-child(4),
+.container th:nth-child(4) { display: none; }
+}
+
+
 	
 </style>
 
@@ -244,7 +379,250 @@
 				</div>
 			</section>
 
-			
+			<section id="two" class="wrapper alt style2">
+				<div class="inner">
+					<center><h2 class="major" STYLE="color:#ffffff">SCHEDULE</h2></center>
+
+
+					<div class="content">
+						<br>
+						<br>
+						<div class="list-type5">
+                    <ol>
+                         <center><strong>
+						  <li style="font: 1.3em sans-serif;  color:white">DAY 1 
+							</li>
+							
+							<table class="container">
+								<thead>
+									<tr>
+										<th><h1>Time</h1></th>
+										<th><h1>Event</h1></th>
+										
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>8:15 am - 8:45 am</td>
+										<td>Registration</td>
+										
+									</tr>
+									<tr>
+										<td>9:00 am - 10:15 am</td>
+										<td>Inauguration</td>
+										
+									</tr>
+									<tr>
+										<td>10:15 am - 10:45am</td>
+										<td>Break</td>
+										
+									</tr>
+								<tr>
+									<td>10:45 am -12:30 pm</td>
+									<td>Session 1</td>
+										
+									</tr>
+								<tr>
+									<td>12:30 pm - 1:15 pm</td>
+									<td>Lunch</td>
+										
+									</tr>
+								<tr>
+									<td>1:15 pm - 4:00 pm</td>
+									<td>Session 2</td>
+										
+									</tr>
+								</tbody>
+							</table>
+							<br>
+
+
+
+
+
+						  
+                              <!-- <div class="list-type3">
+                                   <ol>
+                                           <li><a href="#">.</a></li>
+                                           <li><a href="#">.</a></li>
+                                           <li><a href="#">.</a></li>
+                                   </ol>
+                              </div> -->
+						  <li style="font: 1.3em sans-serif;  color:white">DAY 2 </li>
+						  
+						  <table class="container">
+							<thead>
+								<tr>
+									<th><h1>Time</h1></th>
+									<th><h1>Event</h1></th>
+									
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>8:30 am - 10:00 am</td>
+									<td>Session 3</td>
+									
+								</tr>
+								<tr>
+									<td>10:00 am - 10:15 am</td>
+									<td>Break</td>
+									
+								</tr>
+								<tr>
+									<td>10:15 am - 12:30 pm</td>
+									<td>Session 4</td>
+									
+								</tr>
+				
+							<tr>
+								<td>12:30 pm - 1:15 pm</td>
+								<td>Lunch</td>
+									
+								</tr>
+							<tr>
+								<td>1:15 pm - 4:00 pm</td>
+								<td>Session 5</td>
+									
+								</tr>
+							</tbody>
+						</table>
+						<br>
+
+                              
+						  <li style="font: 1.3em sans-serif;  color:white">DAY 3 </li>
+						  <table class="container">
+							<thead>
+								<tr>
+									<th><h1>Time</h1></th>
+									<th><h1>Event</h1></th>
+									
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>8:30 am - 10:00 am</td>
+									<td>Session 6</td>
+									
+								</tr>
+								<tr>
+									<td>10:00 am - 10:15 am</td>
+									<td>Break</td>
+									
+								</tr>
+								<tr>
+									<td>10:15 am - 12:30 pm</td>
+									<td>Session 7</td>
+									
+								</tr>
+				
+							<tr>
+								<td>12:30 pm - 1:15 pm</td>
+								<td>Lunch</td>
+									
+								</tr>
+							<tr>
+								<td>1:15 pm - 2:30 pm</td>
+								<td>Session 8</td>
+									
+								</tr>
+								<tr>
+									<td>2:30 pm - 4:00 pm</td>
+									<td>Closing Ceremony</td>
+										
+									</tr>
+							</tbody>
+						</table>
+						<br>
+
+                              
+                          </strong>
+                          </center>
+                    </ol>
+						
+					</div>
+				</div>
+				
+			</section>
+
+			<section id="two" class="wrapper style3">
+				<div class="inner">
+					<div class="content">
+
+							<div class="inner">
+									<div class="content">
+										<center><h2 class="major">RULES AND REGULATIONS</h2></center>
+										<h3>GENERAL INSTRUCTIONS</h3>
+										<ul>
+											<li>All delegates are expected to maintain decorum inside school premises and follow instructions given by their respective Executive Board members when inside committees. </li>
+											<li>All delegates must arrive on time and be present in committee on all days and  during all sessions.
+											</li>
+										</ul>
+										<br>
+										<h3>Gadget Policy</h3>
+										<ul>
+											<li>Delegates are allowed to use electronic gadgets for all offline purposes.  (Except in the Axis Tripartite).
+											 </li>
+											<li>Use of any electronic gadget is stricty prohibited in the Axis Tripartite.</li>
+											<li>Usage of internet in any committee is strictly prohibited. 
+											</li>
+				
+										</ul>
+				
+										<br>
+										<h3>Payment Method(Registration Fee =  ₹1000 per Delegate)</h3>
+										<ul>
+											<li>Payment is to be made to faculty incharge of the respective school on announcement of allotments.</li>
+											<li>Internal Delegates: Payment should be made to the respective class teachers by 16th August, 2018, on announcement of allotments.</li>
+										</ul>
+				
+										<br>
+										<h3>Dress Code : Western formals</h3>
+										<ul>
+											<li><b>For girls: </b>Knee length skirts, blouses/skirts, jumpsuits,  formal trousers and shirts.</li>
+											<li><b>For boys: </b>Full-sleeved shirts and formal trousers. Tie is compulsory.</li>
+										</ul>
+				
+										<br>
+										<h3>Position papers</h3>
+										<p>All committees except Axis Tripartite and International Press Corps require the submission of position papers.
+				
+										</p>
+										<p>Last date for submission of position papers :<b> Midnight of 21st August, 2018.</b>
+										 (Refer to Delegate Handbook for Sample Position Paper)
+											<br>
+											<b>Note:The position papers have to be mailed to the respective committee E-mails.</b>
+										</p>
+										<br>
+										<h3>Eco-friendly Motive</h3>
+										<p> To maintain an eco-friendly environment, we request all delegates to bring their own water bottles to avoid use of plastic water bottles. Drinking Water will be provided at R-NPSMUN'18 and the delegates can refill their bottles any time.
+										</p>
+										<br>
+				
+										<p><b>Lunch and refreshments will be provided for all delegates on all days of R-NPSMUN 2018.
+												</b>
+										</p>
+										<br>
+				
+										<p><b>For details regarding MUN RoP, sample position paper and draft resolution, refer to the Delegate Handbook.
+												</b>
+										</p>
+				
+										
+									</div>
+
+						
+						<div >
+                     <a  href="./content/guides/DelegateHandbook.pdf">
+						<button  href="./content/guides/DelegateHandbook.pdf"   class="button primary icon fa-download" style="width:100%; font-size:1em">
+						<!-- <a href="./content/portfolios/cresi.pdf"> -->DELEGATE HANDBOOK<!-- </a> -->
+					    </button>
+				    </a>
+				</div>	
+					</div>
+				</div>
+				
+			</section>
                    
 			<!-- Four -->
 			<section id="four" class="wrapper alt style1">
@@ -345,67 +723,7 @@
 
 
 			<section id="two" class="wrapper style2">
-				<div class="inner">
-					<div class="content">
-						<center><h2 class="major">RULES AND REGULATIONS</h2></center>
-						<h3>GENERAL INSTRUCTIONS</h3>
-						<ul>
-							<li>All delegates are expected to maintain decorum inside school premises and follow instructions given by their respective Executive Board members when inside committees. </li>
-							<li>All delegates must arrive on time and be present in committee on all days and  during all sessions.
-                            </li>
-						</ul>
-						<br>
-						<h3>Gadget Policy</h3>
-						<ul>
-							<li>Delegates are allowed to use electronic gadgets for all offline purposes.  (Except in the Axis Tripartite).
-                             </li>
-							<li>Use of any electronic gadget is stricty prohibited in the Axis Tripartite.</li>
-							<li>Usage of internet in any committee is strictly prohibited. 
-                            </li>
-
-						</ul>
-
-						<br>
-						<h3>Payment Method(Registration Fee =  ₹1000 per Delegate)</h3>
-						<ul>
-							<li>Payment is to be made to faculty incharge of the respective school on announcement of allotments.</li>
-							<li>Internal Delegates: Payment should be made to the respective class teachers by 16th August, 2018, on announcement of allotments.</li>
-						</ul>
-
-                        <br>
-						<h3>Dress Code : Western formals</h3>
-						<ul>
-							<li><b>For girls: </b>Knee length skirts, blouses/skirts, jumpsuits,  formal trousers and shirts.</li>
-							<li><b>For boys: </b>Full-sleeved shirts and formal trousers. Tie is compulsory.</li>
-						</ul>
-
-						<br>
-						<h3>Position papers</h3>
-						<p>All committees except Axis Tripartite and International Press Corps require the submission of position papers.
-
-						</p>
-						<p>Last date for submission of position papers :<b> Midnight of 21st August, 2018.</b>
-                         (Refer to Delegate Handbook for Sample Position Paper)
-							<br>
-							<b>Note:The position papers have to be mailed to the respective committee E-mails.</b>
-                        </p>
-                        <br>
-                        <h3>Eco-friendly Motive</h3>
-                        <p> To maintain an eco-friendly environment, we request all delegates to bring their own water bottles to avoid use of plastic water bottles. Drinking Water will be provided at R-NPSMUN'18 and the delegates can refill their bottles any time.
-                        </p>
-                        <br>
-
-                        <p><b>Lunch and refreshments will be provided for all delegates on all days of R-NPSMUN 2018.
-                                </b>
-                        </p>
-                        <br>
-
-                        <p><b>For details regarding MUN RoP, sample position paper and draft resolution, refer to the Delegate Handbook.
-                                </b>
-                        </p>
-
-						
-					</div>
+				
 				
 			</section>
 
@@ -413,13 +731,7 @@
 			<br>
 			<br>
 			</div>
-				<div >
-                     <a  href="./content/guides/DelegateHandbook.pdf">
-						<button  href="./content/guides/DelegateHandbook.pdf"   class="button primary icon fa-download" style="width:100%; font-size:1em">
-						<!-- <a href="./content/portfolios/cresi.pdf"> -->DELEGATE HANDBOOK<!-- </a> -->
-					    </button>
-				    </a>
-				</div>		
+					
 			
 
 			<!-- Footer -->
