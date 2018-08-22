@@ -34,7 +34,7 @@ function tick() {
     console.log("Minutes left " + lminutes)
     var lseconds = Math.floor((root - ((ldays * mDay) + (lhours * mHour) + (lminutes * mMinute))) / mSecond);
 
-    box.innerText = ldays + " Days " + lhours + " Hours " + lminutes + " Minutes " + lseconds+ " Seconds"
+    box.innerText = ldays + " D" + lhours + " H " + lminutes + " M " + lseconds+ " S"
     if ( today >= due  ){
         box.innerText = "It has begun ! ! ! ! !" ;
     }
