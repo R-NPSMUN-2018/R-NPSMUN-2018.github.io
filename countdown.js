@@ -1,6 +1,6 @@
 
 // SCSCSCSC Chinmay's Countdown timer ( Limit - Days, can be extended with same logic ) 
-var today = new Date(2018, 7, 28 , 8 , 29 ,56  );
+
 window.setInterval(tick, 1000);
 
 function tick() {
@@ -8,10 +8,8 @@ function tick() {
     var due = new Date(2018, 7, 28, 8, 30);
     box.innerHTML = due;
 
-    
-    // Test code 
+    var today = new Date();    
 
-    today.setSeconds(today.getSeconds() + 1 )
     
 
     var root = (due.getTime() - today.getTime());
