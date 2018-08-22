@@ -1,20 +1,43 @@
-var a  = new Date();
 
-a.setFullYear(2018, 7, 28 , 8 );
+// SCSCSCSC Chinmay's Countdown timer ( Limit - Days, can be extended with same logic ) 
+var today = new Date(2018, 7, 28 , 8 , 29 ,56  );
+window.setInterval(tick, 1000);
 
-var DateString;
-var today  =new Date();
+function tick() {
+    box = document.getElementById("box");
+    var due = new Date(2018, 7, 28, 8, 30);
+    box.innerHTML = due;
 
-setInterval(GetDate(today,a), 1000);
+    
+    // Test code 
 
-function GetDate(today,finale){
-    var Rem = new Date(finale.getTime() - today.getTime() );
-    console.log(finale) ;
-    console.log(today);
-    var Days = (Rem / ( 1000 * 60 * 60 * 24 ) );
-    var Hours = ( 24 - today.getHours() );
-    var Minutes = ( 60  - today.getMinutes());
-    var Seconds = 60  - today.getSeconds();
-    document.getElementById('countdown').innerHTML = Days+':'+Hours+':'+Minutes+':'+Seconds ;
-};
+    today.setSeconds(today.getSeconds() + 1 )
+    
 
+    var root = (due.getTime() - today.getTime());
+    (due.getTime() - today.getTime())
+
+    // Multipliers
+
+    var mDay = 1000 * 3600 * 24;
+    console.log(mDay);
+    var mHour = mDay / 24;
+    console.log(mHour);
+    var mMinute = mHour / 60;
+    console.log(mMinute);
+    var mSecond = mMinute / 60;
+    console.log(mSecond);
+
+    var ldays = Math.floor((root) / (mDay));
+    console.log("Days left " + ldays)
+    var lhours = Math.floor((root - (ldays * mDay)) / mHour);
+    console.log("Hours left " + lhours)
+    var lminutes = Math.floor((root - ((ldays * mDay) + (lhours * mHour))) / mMinute);
+    console.log("Minutes left " + lminutes)
+    var lseconds = Math.floor((root - ((ldays * mDay) + (lhours * mHour) + (lminutes * mMinute))) / mSecond);
+
+    box.innerText = ldays + " Days " + lhours + " Hours " + lminutes + " Minutes " + lseconds+ " Seconds"
+    if ( today >= due  ){
+        box.innerText = "It has begun ! ! ! ! !" ;
+    }
+}
