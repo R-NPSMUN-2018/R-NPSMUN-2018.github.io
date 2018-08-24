@@ -36,8 +36,8 @@ function tick() {
     console.log("Minutes left " + lminutes)
     var lseconds = Math.floor((root - ((ldays * mDay) + (lhours * mHour) + (lminutes * mMinute))) / mSecond);
 
-    box.innerText = ldays + " Days " + lhours + " Hours " + lminutes + " Minutes " + lseconds+ " Seconds"
+    box.innerText = ldays + " Days, " + lhours + " Hours, " + lminutes + " Minutes and " + lseconds+ " Seconds! !"
     if ( today >= due  ){
-        box.innerText = "It has begun ! ! ! ! !" ;
+        box.innerText = "R-NPSMUN 2018 has begun ! ! ! ! !" ;
     }
 }
