@@ -5,7 +5,7 @@ window.setInterval(tick, 1000);
 
 function tick() {
     box = document.getElementById("box");
-    var due = new Date(2018, 7, 28, 8, 30);
+    var due = new Date(2018, 7, 28, 9, 00);
     box.innerHTML = due;
 
     var today = new Date();    
